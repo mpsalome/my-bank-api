@@ -18,13 +18,13 @@ app.listen(3000, async () => {
             nextId: 1,
             accounts: []
         }
-        writeFile("accounts.json", JSON.stringify(initialJson)
+        writeFile("accounts.json", JSON.stringify(initialJson))
             .then(() => {
                 console.log("API Started & File created")
             })
             .catch(err => {
                 console.log(err);
-            }))
+            })
     }
     console.log("API Started")
 })
